@@ -8,6 +8,7 @@ import com.connutils.Request;
 import com.gui.principalframe.PrincipalFrame;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.formdev.flatlaf.FlatDarkLaf;
+import com.utils.ConfigReader;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -25,8 +26,8 @@ import javax.swing.UnsupportedLookAndFeelException;
  * @author migue
  */
 public class Client {
-    private static final String SERVIDOR = "localhost";  // Dirección del servidor
-    private static final int PUERTO = 5000;  // El puerto al que se conecta
+    private static final String SERVIDOR = ConfigReader.getHost();  // Dirección del servidor
+    private static final int PUERTO = ConfigReader.getPuerto();  // El puerto al que se conecta
 
     private static Scanner sc = null;
     private static Socket socket = null;
@@ -47,7 +48,6 @@ public class Client {
                 e.printStackTrace();
             }
             frame = new PrincipalFrame();
-//            login("Pepe","1234");
 
         } catch (IOException e) {
             closeConnection();

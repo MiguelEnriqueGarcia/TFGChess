@@ -23,6 +23,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import com.connutils.Request;
 import com.connutils.RequestBuilder;
+import com.utils.ConfigReader;
 
 /**
  *
@@ -30,14 +31,8 @@ import com.connutils.RequestBuilder;
  */
 public class Server {
     
-    static{
-        try(Scanner sc = new Scanner(new File("src/main/resources/Configuration.txt"))){
-            PORT = Integer.parseInt(sc.nextLine());
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }
-    private static int PORT;
+    
+    private static final int PORT = ConfigReader.getPuerto();
     
     public static Map<String, ClientConn> players = new HashMap<>();
     private static Map<String, Game> games = new HashMap<>();
@@ -45,10 +40,8 @@ public class Server {
     public static Map<String, ChatLog> logs = new HashMap<String, ChatLog>();
     
     public static void main(String[] args) {
-//        DatabaseManager.addFriendRequestByUsernames("Pepe", "jose");
-//        DatabaseManager.addFriendRequestByUsernames("jose", "Pepe");
          try {
-             ServerSocket serverSocket = new ServerSocket(5000);
+             ServerSocket serverSocket = new ServerSocket(PORT);
              Socket actualSocket;
              
              for (;;) {

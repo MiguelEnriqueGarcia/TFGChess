@@ -15,6 +15,7 @@ E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\general\ChatPa
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\joingame\ActionJoined.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\principalframe\SetUpCommand.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\login\Login.java
+E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\utils\ConfigReader.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\lobby\ActionPlayerJoined.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\menu\Menu.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\login\ActionLoged.java
@@ -41,7 +42,6 @@ E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\creategame\Cre
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\principalframe\SetUpMenuCommand.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\register\Register.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\principalframe\SetUpCreateGameCommand.java
-E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\utils\t.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\principalframe\SetUpRegister.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\principalframe\SetUpJoinGameCommand.java
 E:\GIT\Repositorios\TFGChess\TFGChessClient\src\main\java\com\gui\creategame\ActionJoined.java

@@ -15,6 +15,7 @@ exec\chess\test02.class
 com\db\dbUtils\HibernateUtils.class
 exec\chess\test04.class
 com\db\pojo\PlayerFriend.class
+com\utils\ConfigReader.class
 com\server\Server.class
 exec\chess\testJSON.class
 exec\chess\test01.class
